@@ -1,13 +1,15 @@
-import "./globals.css";
+import './globals.css';
+import Hydrate from './Hydrate';
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Hydrate>{children}</Hydrate>
       </body>
     </html>
   );

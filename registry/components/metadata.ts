@@ -1,14 +1,11 @@
 export const componentsMetadata = {} as const;
 
 // Dynamically create union types based on the properties of the componentsMetadata object
-export type ComponentSlug =
-  (typeof componentsMetadata)[keyof typeof componentsMetadata]["slug"];
-export type ComponentName =
-  (typeof componentsMetadata)[keyof typeof componentsMetadata]["name"];
-export type ComponentTitle =
-  (typeof componentsMetadata)[keyof typeof componentsMetadata]["title"];
+export type ComponentSlug = (typeof componentsMetadata)[keyof typeof componentsMetadata]['slug'];
+export type ComponentName = (typeof componentsMetadata)[keyof typeof componentsMetadata]['name'];
+export type ComponentTitle = (typeof componentsMetadata)[keyof typeof componentsMetadata]['title'];
 export type ComponentDescription =
-  (typeof componentsMetadata)[keyof typeof componentsMetadata]["description"];
+  (typeof componentsMetadata)[keyof typeof componentsMetadata]['description'];
 
 export type ComponentType = {
   slug: ComponentSlug;
@@ -29,5 +26,5 @@ export type ComponentType = {
   implementation_4?: string;
   implementation_4_title?: string;
   addCommand: string;
-  type: "component" | "block";
+  type: 'component' | 'block';
 };
