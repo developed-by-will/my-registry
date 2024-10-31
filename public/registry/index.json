@@ -1,0 +1,16 @@
+[
+  {
+    "name": "breadcrumbs",
+    "type": "registry:ui",
+    "registryDependencies": [
+      "breadcrumb"
+    ],
+    "files": [
+      {
+        "path": "ui/breadcrumbs/index.tsx",
+        "type": "registry:ui",
+        "target": "components/breeze-ui/breadcrumbs.tsx"
+      }
+    ]
+  }
+]
