@@ -1,4 +1,12 @@
-export const componentsMetadata = {} as const;
+export const registryDir = 'https://google.com/';
+export const componentsMetadata = {
+  breadcrumbs: {
+    slug: 'breadcrumbs',
+    name: 'breadcrumbs',
+    title: 'Breadcrumbs',
+    description: 'Displays the path to the current resource using a hierarchy of links.'
+  }
+} as const;
 
 // Dynamically create union types based on the properties of the componentsMetadata object
 export type ComponentSlug = (typeof componentsMetadata)[keyof typeof componentsMetadata]['slug'];
