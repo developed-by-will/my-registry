@@ -5,6 +5,12 @@ export const componentsMetadata = {
     name: 'breadcrumbs',
     title: 'Breadcrumbs',
     description: 'Displays the path to the current resource using a hierarchy of links.'
+  },
+  login01: {
+    slug: 'login-01',
+    name: 'login-01',
+    title: 'Login 01',
+    description: 'A login page with multiple authentication providers.'
   }
 } as const;
 

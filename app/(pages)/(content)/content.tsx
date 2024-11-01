@@ -40,7 +40,15 @@ export default function Content(props: Readonly<PropsType>) {
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content value="preview" className="p-4 border rounded-md space-y-6">
-          {component.example && renderExample}
+          {component.example && component.slug === 'login-01' ? (
+            <div className="h-[650px]">
+              <div className="relative flex justify-center items-center h-full">
+                {renderExample}
+              </div>
+            </div>
+          ) : (
+            renderExample
+          )}
 
           {component.example && (component.slug as string) !== 'toast' && (
             <>
