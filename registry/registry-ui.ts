@@ -5,6 +5,7 @@ export const ui: Registry = [
     name: 'breadcrumbs',
     type: 'registry:ui',
     registryDependencies: ['breadcrumb'],
+    dependencies: ['@radix-ui/react-icons'],
     files: [
       {
         path: 'ui/breadcrumbs/index.tsx',
