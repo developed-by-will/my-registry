@@ -1,4 +1,5 @@
 export const registryDir = 'https://my-registry.wilsongomes.me';
+
 export const componentsMetadata = {
   breadcrumbs: {
     slug: 'breadcrumbs',
