@@ -1,4 +1,4 @@
-export const registryDir = 'https://my-registry.wilsongomes.me';
+export const registryDir = 'https://my-registry.wilsongomes.me/public/registry/components/';
 
 export const componentsMetadata = {
   breadcrumbs: {
