@@ -65,5 +65,5 @@ export const config: ComponentType = {
   codeSnippet,
   example,
   implementation_1: exampleAsString,
-  addCommand: `npx shadcn add ${registryDir}${componentsMetadata.login01.name}.json`
+  addCommand: `npx shadcn add ${registryDir}/${componentsMetadata.login01.name}.json`
 };
